@@ -1,0 +1,106 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Set a Pin code
+		int pinCode = 2021;
+		
+		//Set a Pin by the user
+		int pin = 0;
+		
+		//Pin tries
+		int pinTries = 3;
+		
+		//Guess tries
+		int guessTries = 3;
+		
+		//Maximum for the Draw
+		int drawMax = 400;
+		
+		//Insert the amount for cash draw
+		int cashDraw = 0;
+		
+		//Cash balance
+		int balance = 800;
+		
+		//Iterator for the while
+		int i = 0;
+		
+		while (i >=0 )
+		{
+			if (i == 0)
+			{
+				Console.WriteLine("Hello, Insert your Pin code, Please.\n");
+			
+				//Insert the pin
+				pin = int.Parse(Console.ReadLine());
+				
+				if (pin == pinCode) 
+				{
+					Console.WriteLine("Your Pin is correct!\n");
+				}
+				i++;
+			}
+
+			if (pin == pinCode && i >=0) 
+			{
+				Console.WriteLine("Insert the amount for the cash draw.");
+				
+				//insert the amount disered
+				cashDraw = int.Parse(Console.ReadLine());
+				
+				if(balance >= cashDraw && cashDraw <= drawMax && guessTries <=3)
+				{
+					balance = balance - cashDraw;
+					drawMax = drawMax - cashDraw;
+					Console.WriteLine("Get the desired amount of {0}  and your current balance is {1}.", cashDraw, balance);
+					guessTries--;
+					i++;
+				}
+				else if (balance <= cashDraw && balance != 0)
+				{
+					balance = balance - cashDraw;
+					drawMax = drawMax - cashDraw;
+					Console.WriteLine("You draw {0} cash and your daily cash drwa is {1}.\nYour current balance is {2}", cashDraw, cashDraw, balance);
+					guessTries--;
+					i++;
+				}
+				else if (balance <= cashDraw && balance == 0 && guessTries <=3) 
+				{
+					Console.WriteLine("Invalid cash draw, not enough balance.\nYou current balance is {0}", balance);
+					guessTries--;
+					i++;
+				}
+
+				else if (cashDraw > drawMax && guessTries <=3)
+				{
+					drawMax	= 0;
+					Console.WriteLine("\nInvalid cash draw, not enough money within the daily limit.\nCurrently, you have a maximum daily limit of {0}", drawMax);
+					guessTries--;
+					i++;
+				}
+
+				else if (guessTries == 0) 
+				{
+					Console.WriteLine("You exceed the daily limit of cash draws.");
+					guessTries--;
+					i++;
+				}
+			}
+			if (pin != pinCode && pinTries <= 3)  
+			{
+			 	Console.WriteLine("invalid Pin.");
+				pinTries--;
+				i = 0;
+			}
+			if (pin != pinCode && pinTries == 0)
+			{
+				Console.WriteLine("Not enough pin tries. You are block by the system");
+				break;
+			}
+			
+		}
+	}
+}
