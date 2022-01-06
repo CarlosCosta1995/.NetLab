@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLAB_Aula7", "NetLAB_Aula7\NetLAB_Aula7.csproj", "{D29F9EEA-BDD3-4604-B79C-7AE520DED22B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D29F9EEA-BDD3-4604-B79C-7AE520DED22B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D29F9EEA-BDD3-4604-B79C-7AE520DED22B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D29F9EEA-BDD3-4604-B79C-7AE520DED22B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D29F9EEA-BDD3-4604-B79C-7AE520DED22B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20914E6E-48F8-4115-9F61-A96605EFB013}
+	EndGlobalSection
+EndGlobal

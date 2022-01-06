@@ -1,0 +1,15 @@
+C:\Users\Net15\source\repos\NetLAB_Aula7\NetLAB_Aula7\bin\Debug\net6.0\NetLAB_Aula7.exe
+C:\Users\Net15\source\repos\NetLAB_Aula7\NetLAB_Aula7\bin\Debug\net6.0\NetLAB_Aula7.deps.json
+C:\Users\Net15\source\repos\NetLAB_Aula7\NetLAB_Aula7\bin\Debug\net6.0\NetLAB_Aula7.runtimeconfig.json
+C:\Users\Net15\source\repos\NetLAB_Aula7\NetLAB_Aula7\bin\Debug\net6.0\NetLAB_Aula7.dll
+C:\Users\Net15\source\repos\NetLAB_Aula7\NetLAB_Aula7\bin\Debug\net6.0\ref\NetLAB_Aula7.dll
+C:\Users\Net15\source\repos\NetLAB_Aula7\NetLAB_Aula7\bin\Debug\net6.0\NetLAB_Aula7.pdb
+C:\Users\Net15\source\repos\NetLAB_Aula7\NetLAB_Aula7\obj\Debug\net6.0\NetLAB_Aula7.csproj.AssemblyReference.cache
+C:\Users\Net15\source\repos\NetLAB_Aula7\NetLAB_Aula7\obj\Debug\net6.0\NetLAB_Aula7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Net15\source\repos\NetLAB_Aula7\NetLAB_Aula7\obj\Debug\net6.0\NetLAB_Aula7.AssemblyInfoInputs.cache
+C:\Users\Net15\source\repos\NetLAB_Aula7\NetLAB_Aula7\obj\Debug\net6.0\NetLAB_Aula7.AssemblyInfo.cs
+C:\Users\Net15\source\repos\NetLAB_Aula7\NetLAB_Aula7\obj\Debug\net6.0\NetLAB_Aula7.csproj.CoreCompileInputs.cache
+C:\Users\Net15\source\repos\NetLAB_Aula7\NetLAB_Aula7\obj\Debug\net6.0\NetLAB_Aula7.dll
+C:\Users\Net15\source\repos\NetLAB_Aula7\NetLAB_Aula7\obj\Debug\net6.0\ref\NetLAB_Aula7.dll
+C:\Users\Net15\source\repos\NetLAB_Aula7\NetLAB_Aula7\obj\Debug\net6.0\NetLAB_Aula7.pdb
+C:\Users\Net15\source\repos\NetLAB_Aula7\NetLAB_Aula7\obj\Debug\net6.0\NetLAB_Aula7.genruntimeconfig.cache
