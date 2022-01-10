@@ -43,5 +43,5 @@ double perimRect = r1.CalculatePerimetro();
 
 Console.WriteLine("Perimetro:{0}, Area:{1}", perimRect, areaRect);
 
-Point pointE = new Point(10, 10);
+Point pointE = new Point(1, 4);
 Console.WriteLine(r1.Contains(pointE));
