@@ -18,7 +18,7 @@ p1.setPointY(1);
 p2.setPointXandY(2, 5);
 Console.WriteLine(p2.getPointX());
 Console.WriteLine(p2.getPointY());
-s
+
 //calculation DistanceTo
 double distance = p1.DistanceTo(p2);
 Console.WriteLine("Distancia de p1 a p2: {0}",distance);    
@@ -42,3 +42,6 @@ double areaRect = r1.CalculateArea();
 double perimRect = r1.CalculatePerimetro();
 
 Console.WriteLine("Perimetro:{0}, Area:{1}", perimRect, areaRect);
+
+Point pointE = new Point(10, 10);
+Console.WriteLine(r1.Contains(pointE));

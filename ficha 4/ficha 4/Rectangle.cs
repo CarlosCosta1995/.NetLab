@@ -71,8 +71,14 @@ namespace ficha_4
         public bool Contains(Point point)
         {
             Point topRigthPoint = new Point(topLeftPoint.X + width, topLeftPoint.Y + Height);
-            Point bottomRigthPoint = new Point(topLeftPoint.X - Width, topLeftPoint.Y + Height);
-            Point bottomLeftPoint = new Point(topLeftPoint.X , topLeftPoint.Y);
+            Point bottomRigthPoint = new Point(topLeftPoint.X + Width, topLeftPoint.Y - Height);
+            Point bottomLeftPoint = new Point(topLeftPoint.X , topLeftPoint.Y - Height);
+            
+            if(point.X > bottomLeftPoint.X && point.X < bottomRigthPoint.X && point.Y > bottomLeftPoint.Y && point.Y < topLeftPoint.Y) 
+            {
+               return true;
+            }
+            else { return false; }
         }
     }
 }

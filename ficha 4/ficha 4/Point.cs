@@ -74,7 +74,5 @@ namespace ficha_4 //Project Context
             //Enquanto other/that é referente ao p2(main) que quer realizar a operação.
             return Math.Sqrt(Math.Pow(other.x - this.x, 2) + Math.Pow(other.y - this.y, 2));
         }
-
-
     }
 }

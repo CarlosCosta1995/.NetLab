@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Net15\\source\\repos\\ficha 4\\ficha 4\\ficha 4.csproj",
+      "projectUniqueName": "C:\\Users\\Net15\\Desktop\\Requalificar\\.NetLab\\ficha 4\\ficha 4\\ficha 4.csproj",
       "projectName": "ficha 4",
-      "projectPath": "C:\\Users\\Net15\\source\\repos\\ficha 4\\ficha 4\\ficha 4.csproj",
+      "projectPath": "C:\\Users\\Net15\\Desktop\\Requalificar\\.NetLab\\ficha 4\\ficha 4\\ficha 4.csproj",
       "packagesPath": "C:\\Users\\Net15\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Net15\\source\\repos\\ficha 4\\ficha 4\\obj\\",
+      "outputPath": "C:\\Users\\Net15\\Desktop\\Requalificar\\.NetLab\\ficha 4\\ficha 4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Net15\\AppData\\Roaming\\NuGet\\NuGet.Config",
