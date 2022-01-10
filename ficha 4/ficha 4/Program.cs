@@ -38,6 +38,7 @@ Console.WriteLine(triangle.CalculateArea());  */
 Point PointD = new Point(0, 5);
 
 Rectangle r1 = new Rectangle(PointD, 5 , 5);
+
 double areaRect = r1.CalculateArea();
 double perimRect = r1.CalculatePerimetro(); //Perimeter
 
@@ -45,4 +46,4 @@ Console.WriteLine("Perimeter for r1: {0}, Area for r1: {1}", perimRect, areaRect
 
 Point pointE = new Point(1, 4);
 Point pointF = new Point(6, 6);
-Console.WriteLine("r1 Contains Point E: {0}, r1 Contains Point F: {1}", r1.Contains(pointE) , r1.Contains(pointE));
+Console.WriteLine("r1 Contains Point E: {0}, r1 Contains Point F: {1}", r1.Contains(pointE) , r1.Contains(pointF));
