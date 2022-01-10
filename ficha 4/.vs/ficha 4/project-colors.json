@@ -3,9 +3,14 @@
   "ProjectMap": {
     "3f03a8e0-b1bd-4427-b3b8-626e13363cf0": {
       "ProjectGuid": "3f03a8e0-b1bd-4427-b3b8-626e13363cf0",
-      "DisplayName": "ficha 4",
+      "DisplayName": "Ficha4",
       "ColorIndex": 0
+    },
+    "a4be3441-0590-4bc8-8252-ca0c6e7411f7": {
+      "ProjectGuid": "a4be3441-0590-4bc8-8252-ca0c6e7411f7",
+      "DisplayName": "Ficha5",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

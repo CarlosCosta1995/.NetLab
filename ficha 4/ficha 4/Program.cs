@@ -21,17 +21,17 @@ Console.WriteLine(p2.getPointY());
 
 //calculation DistanceTo
 double distance = p1.DistanceTo(p2);
-Console.WriteLine("Distancia de p1 a p2: {0}",distance);    
+Console.WriteLine("\nDistancia de p1 a p2: {0}",distance);    
 
 
-/*//Triangulo
+//Triangulo
 Point pointA = new Point(1, 1);
 Point pointB = new Point(1, 4);
 Point pointC = new Point(3, 1);
 
 Triangle triangle = new Triangle();
 triangle.CalculateArea();
-Console.WriteLine(triangle.CalculateArea());  */ 
+Console.WriteLine("" + triangle.CalculateArea());  
 
 
 //Rectangulo
@@ -42,8 +42,23 @@ Rectangle r1 = new Rectangle(PointD, 5 , 5);
 double areaRect = r1.CalculateArea();
 double perimRect = r1.CalculatePerimetro(); //Perimeter
 
-Console.WriteLine("Perimeter for r1: {0}, Area for r1: {1}", perimRect, areaRect);
+Console.WriteLine("\nPerimeter for r1: {0}, Area for r1: {1}", perimRect, areaRect);
 
 Point pointE = new Point(1, 4);
 Point pointF = new Point(6, 6);
-Console.WriteLine("r1 Contains Point E: {0}, r1 Contains Point F: {1}", r1.Contains(pointE) , r1.Contains(pointF));
+Console.WriteLine("\nr1 Contains Point E: {0}, r1 Contains Point F: {1}", r1.Contains(pointE) , r1.Contains(pointF));
+
+
+//Circle
+Circle c1 = new Circle();   
+
+//Point pointG = new Point(5, 5); 
+//Circle c2= new Circle(pointG, 5);
+Circle c2 = new Circle(new Point( 5, 5), 5);
+
+double perimeterCircle = c1.getPerimeter();
+double areaCircle = c2.getArea();  
+
+Console.WriteLine("\nPerimeter for c1: {0}, Area for c1: {1}", perimeterCircle, areaCircle);
+Console.WriteLine("The Center of the circle are in: {0}", c2.ToString());
+//cw+ tab = Console.WriteLine();

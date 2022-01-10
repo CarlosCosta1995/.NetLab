@@ -1,0 +1,15 @@
+C:\Users\Net15\Desktop\Requalificar\.NetLab\ficha 4\ficha 4\obj\Debug\net6.0\Ficha4.csproj.AssemblyReference.cache
+C:\Users\Net15\Desktop\Requalificar\.NetLab\ficha 4\ficha 4\obj\Debug\net6.0\Ficha4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Net15\Desktop\Requalificar\.NetLab\ficha 4\ficha 4\obj\Debug\net6.0\Ficha4.AssemblyInfoInputs.cache
+C:\Users\Net15\Desktop\Requalificar\.NetLab\ficha 4\ficha 4\obj\Debug\net6.0\Ficha4.AssemblyInfo.cs
+C:\Users\Net15\Desktop\Requalificar\.NetLab\ficha 4\ficha 4\obj\Debug\net6.0\Ficha4.csproj.CoreCompileInputs.cache
+C:\Users\Net15\Desktop\Requalificar\.NetLab\ficha 4\ficha 4\bin\Debug\net6.0\Ficha4.exe
+C:\Users\Net15\Desktop\Requalificar\.NetLab\ficha 4\ficha 4\bin\Debug\net6.0\Ficha4.deps.json
+C:\Users\Net15\Desktop\Requalificar\.NetLab\ficha 4\ficha 4\bin\Debug\net6.0\Ficha4.runtimeconfig.json
+C:\Users\Net15\Desktop\Requalificar\.NetLab\ficha 4\ficha 4\bin\Debug\net6.0\Ficha4.dll
+C:\Users\Net15\Desktop\Requalificar\.NetLab\ficha 4\ficha 4\bin\Debug\net6.0\ref\Ficha4.dll
+C:\Users\Net15\Desktop\Requalificar\.NetLab\ficha 4\ficha 4\bin\Debug\net6.0\Ficha4.pdb
+C:\Users\Net15\Desktop\Requalificar\.NetLab\ficha 4\ficha 4\obj\Debug\net6.0\Ficha4.dll
+C:\Users\Net15\Desktop\Requalificar\.NetLab\ficha 4\ficha 4\obj\Debug\net6.0\ref\Ficha4.dll
+C:\Users\Net15\Desktop\Requalificar\.NetLab\ficha 4\ficha 4\obj\Debug\net6.0\Ficha4.pdb
+C:\Users\Net15\Desktop\Requalificar\.NetLab\ficha 4\ficha 4\obj\Debug\net6.0\Ficha4.genruntimeconfig.cache

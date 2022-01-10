@@ -54,7 +54,7 @@ namespace ficha_4
             this.height = height;
         }
 
-        //===== Metodos ====
+        //===== Methods====
 
         public double CalculateArea() 
         { 
