@@ -26,6 +26,7 @@ namespace Ficha5
             this.shapes.Add(shape); 
         }
 
+        //Selector
         public List<Shape> Shapes 
         { 
             //Apenas para leitura/ selecção (get). Nao fazemos atribuição (set)
