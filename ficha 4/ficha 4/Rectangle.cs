@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ficha_4
 {
-    public class Rectangle
+    public class Rectangle : Shape
     {
         /*Class tem sempre:
          * Atributos ==  Descrevem a class { Atribuições das variaveis da class [Tipos premitivos ou de referencias] }
@@ -26,7 +26,7 @@ namespace ficha_4
 
         //========================= Atributos ==========================//
         //Atributos (por norma sao privados, caso queira aceder temos de criar selectores e atribuidores
-        private Point topLeftPoint;
+        //private Point topLeftPoint; não pode ser igualada porque assim tenho 2 pontos com as mesmas propriedades.
         private double width;
         private double height;
 
@@ -35,7 +35,7 @@ namespace ficha_4
         //Construtor por omissão(sem argumentos)
         public Rectangle ()
         { 
-            this.topLeftPoint = new Point ();
+            this.position = position;
             this.height = new double ();
             this.width = new double ();
         }
@@ -43,7 +43,7 @@ namespace ficha_4
         //Construtor por "normal"(por parametros(recebe argumentos[de forma generica sao os da propria class]))
         public Rectangle(Point topLeftPoint, double width, double height)
         {
-            this.topLeftPoint = topLeftPoint;
+            this.position = topLeftPoint;
             this.width = width;
             this.height = height;
         }
@@ -51,8 +51,8 @@ namespace ficha_4
         //========================= Propriedades ==========================//
         public Point TopLeftPoint
         {
-            get { return topLeftPoint; }
-            set { topLeftPoint = value; }
+            get { return position; }
+            set { position = value; }
         }
         public double Width
         {
@@ -67,7 +67,8 @@ namespace ficha_4
 
 
         //========================= Metodos ==========================//
-        public double CalculateArea() 
+        /*Implementados através da herança da Shape
+         * public double CalculateArea() 
         { 
             //Base * Altura
             return width * height;
@@ -77,19 +78,30 @@ namespace ficha_4
         public double CalculatePerimetro() 
         { 
             return (2*width) + (2*height);
-        }
+        }*/
 
         public bool Contains(Point point)
         {
-            Point topRigthPoint = new Point(topLeftPoint.X + width, topLeftPoint.Y + Height);
-            Point bottomRigthPoint = new Point(topLeftPoint.X + Width, topLeftPoint.Y - Height);
-            Point bottomLeftPoint = new Point(topLeftPoint.X , topLeftPoint.Y - Height);
+            Point topRigthPoint = new Point(TopLeftPoint.X + width, TopLeftPoint.Y + Height);
+            Point bottomRigthPoint = new Point(TopLeftPoint.X + Width, TopLeftPoint.Y - Height);
+            Point bottomLeftPoint = new Point(TopLeftPoint.X , TopLeftPoint.Y - Height);
             
-            if(point.X > bottomLeftPoint.X && point.X < bottomRigthPoint.X && point.Y > bottomLeftPoint.Y && point.Y < topLeftPoint.Y) 
+            if(point.X > bottomLeftPoint.X && point.X < bottomRigthPoint.X && point.Y > bottomLeftPoint.Y && point.Y < TopLeftPoint.Y) 
             {
                return true;
             }
             else { return false; }
+        }
+
+        //Metodos herdados da Class Shape
+        public override double getArea()
+        {
+            return width * height;
+        }
+
+        public override double getPerimeter()
+        {
+            return (2 * width) + (2 * height);
         }
     }
 }

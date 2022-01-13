@@ -32,8 +32,9 @@ Point pointB = new Point(1, 4);
 Point pointC = new Point(3, 1);
 
 Triangle triangle = new Triangle();
-triangle.CalculateArea();
-Console.WriteLine("" + triangle.CalculateArea());  
+triangle.getArea();
+triangle.getPerimeter();    
+Console.WriteLine("Triangle Area{0}, Triangle Perimeter{1}", triangle.getArea() ,triangle.getPerimeter());  
 
 
 //Rectangulo
@@ -41,8 +42,8 @@ Point PointD = new Point(0, 5);
 
 Rectangle r1 = new Rectangle(PointD, 5 , 5);
 
-double areaRect = r1.CalculateArea();
-double perimRect = r1.CalculatePerimetro(); //Perimeter
+double areaRect = r1.getArea();
+double perimRect = r1.getPerimeter(); //Perimeter
 
 Console.WriteLine("\nPerimeter for r1: {0}, Area for r1: {1}", perimRect, areaRect);
 
