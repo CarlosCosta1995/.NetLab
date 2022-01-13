@@ -40,7 +40,7 @@ namespace ficha_4 //Project Context
 
         //Method SETTER for setting X and Y values
         //Define and atttribute a value to the coordenates
-        public void setPointX(double x)
+        /*public void setPointX(double x)
         {
             this.x = x;
         }
@@ -54,7 +54,7 @@ namespace ficha_4 //Project Context
         {
             this.x = x;
             this.y = y;
-        }
+        }*/
 
         //Methods GETTER for getting X and Y value (selector)
         //Return the defined value of the coordenates

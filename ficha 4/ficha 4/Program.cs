@@ -7,17 +7,18 @@ using ficha_4;
 Point p1 = new Point(); //For point 1
 Point p2 = new Point(10, 10); //For point 2
 
-Console.WriteLine(p1.getPointX());
-Console.WriteLine(p2.getPointX());
+Console.WriteLine(p1.X);
+Console.WriteLine(p2.Y);
 
 //Changing the p1 coordenates (x,y)
-p1.setPointX(1);
-p1.setPointY(1);
+p1.X = 1;
+p1.Y = 1;
 
 
-p2.setPointXandY(2, 5);
-Console.WriteLine(p2.getPointX());
-Console.WriteLine(p2.getPointY());
+p2.X = 2;
+p2.Y = 5;
+Console.WriteLine(p2.X);
+Console.WriteLine(p2.Y);
 
 //calculation DistanceTo
 double distance = p1.DistanceTo(p2);
