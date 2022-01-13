@@ -41,10 +41,12 @@ namespace ficha_4
             return (2*Math.PI) * radius;    
         }
 
+        //ToString Serve sempre para fazer uma representação textual de um objecto
         public override string ToString()
         {
             //return "X: " + this.position.X + " Y: " + this.position.Y + " Radius: " + this.radius;
             return Position.ToString() + " Radius: " + this.radius;
         }
+        //Nota: override (sobrepor / subrecarregar) == ignora o ToString do systema e sobrepoe por este metodo
     }
 }
