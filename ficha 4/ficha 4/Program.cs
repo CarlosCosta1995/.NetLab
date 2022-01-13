@@ -15,8 +15,9 @@ p1.X = 1;
 p1.Y = 1;
 
 
-p2.X = 2;
-p2.Y = 5;
+//p2.X = 2;
+//p2.Y = 5;
+p2.SetXandY(2, 5);
 Console.WriteLine(p2.X);
 Console.WriteLine(p2.Y);
 

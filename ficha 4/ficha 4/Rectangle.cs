@@ -9,36 +9,30 @@ namespace ficha_4
     public class Rectangle
     {
         /*Class tem sempre:
-         * Atributos
-         * Selectores e Propriedades
-         * Construtores
-         * Metodos
+         * Atributos ==  Descrevem a class { Atribuições das variaveis da class [Tipos premitivos ou de referencias] }
+         * [Atributos sao sempre public, private]
+         * 
+         * Construtores ==  Criam novas instâncias {Por omissao (sem parametros), por parametros (recebe argumentos/parametros) [podemos ter n construtores] // nome do construtor é sempre o nome da class (Constructor vs metodos)}
+         * [Constructores sao sempre public]
+         * 
+         * Propriedades == Expõe os atributos { Selectores(get) e Modificadores(set) Modificar atribuição de variaveis/Valores }
+         * [Propriedades sao sempre public]
+         * 
+         * Metodos == Premitim reatizar operaçoes nas instâncias
+         * [Metodos sao sempre public, private]
+         * 
+         * Nota: Ao longo da contrução deverá ser criado Console.WriteLines(); de forma a verificar se operação está funcionando de forma correcta.
          * */
 
+        //========================= Atributos ==========================//
         //Atributos (por norma sao privados, caso queira aceder temos de criar selectores e atribuidores
         private Point topLeftPoint;
         private double width;
         private double height;
 
-        //Propriedades
-        public Point TopLeftPoint 
-        { 
-            get { return topLeftPoint; } 
-            set { topLeftPoint = value; } 
-        }
-        public double Width 
-        {
-            get { return width; }
-            set { width = value; }
-        }
-        public double Height 
-        { 
-            get { return height; }
-            set { height = value; }
-        }
 
-        //===== Construtores ====
-        //Construtor poro missão(sem argumentos)
+        //========================= Construtores ==========================//
+        //Construtor por omissão(sem argumentos)
         public Rectangle ()
         { 
             this.topLeftPoint = new Point ();
@@ -46,7 +40,7 @@ namespace ficha_4
             this.width = new double ();
         }
 
-        //Construtor poro missão(por parametros(recebe argumentos[de forma generica sao os da propria class]))
+        //Construtor por "normal"(por parametros(recebe argumentos[de forma generica sao os da propria class]))
         public Rectangle(Point topLeftPoint, double width, double height)
         {
             this.topLeftPoint = topLeftPoint;
@@ -54,8 +48,25 @@ namespace ficha_4
             this.height = height;
         }
 
-        //===== Methods====
+        //========================= Propriedades ==========================//
+        public Point TopLeftPoint
+        {
+            get { return topLeftPoint; }
+            set { topLeftPoint = value; }
+        }
+        public double Width
+        {
+            get { return width; }
+            set { width = value; }
+        }
+        public double Height
+        {
+            get { return height; }
+            set { height = value; }
+        }
 
+
+        //========================= Metodos ==========================//
         public double CalculateArea() 
         { 
             //Base * Altura

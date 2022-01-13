@@ -18,7 +18,8 @@ namespace ficha_4 //Project Context
             this.y = 0;
         }
 
-        //Constructors
+        //Constructers => SETTER for setting X and Y values
+        //Define and atttribute a value to the coordenates
         public Point (double x, double y) 
         { 
             //Setting attributes
@@ -38,8 +39,13 @@ namespace ficha_4 //Project Context
             set { this.y = value; }
         }
 
-        //Method SETTER for setting X and Y values
-        //Define and atttribute a value to the coordenates
+        public void SetXandY(double x, double y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
+        
         /*public void setPointX(double x)
         {
             this.x = x;
@@ -48,13 +54,8 @@ namespace ficha_4 //Project Context
         public void setPointY(double y)
         {
             this.y = y;
-        }
-
-        public void setPointXandY(double x,double y)
-        {
-            this.x = x;
-            this.y = y;
         }*/
+
 
         //Methods GETTER for getting X and Y value (selector)
         //Return the defined value of the coordenates
