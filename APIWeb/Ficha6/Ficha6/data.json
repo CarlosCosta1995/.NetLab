@@ -1,0 +1,25 @@
+﻿{
+  "PersonList": [
+    {
+      "FirstName": "Pedro",
+      "LastName": "Lopes",
+      "Profession": "Teacher",
+      "Age": 41,
+      "Id": 1
+    },
+    {
+      "FirstName": "Mario",
+      "LastName": "Gomes",
+      "Profession": "Driver",
+      "Age": 33,
+      "Id": 2
+    },
+    {
+      "FirstName": "Joao",
+      "LastName": "Silva",
+      "Profession": "Programmer",
+      "Age": 27,
+      "Id": 3
+    }
+  ]
+}
