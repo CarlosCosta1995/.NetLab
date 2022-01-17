@@ -13,6 +13,12 @@ app.MapGet("/", () =>
     return "HELLO WORLD!";
 });
 
+app.MapGet("/name", () =>
+{
+    return "Carlos";
+});
+
+//MapDelete, MapPost .... 
 /*{
  * app.MapGet("/test", () => "Hello World!");
 () => DeleGate??
