@@ -48,6 +48,64 @@ app.MapPost("/People", (Person person) =>
     return Results.Ok(person);
 });
 
+
+app.MapDelete("/People", (int id) =>
+{
+    //Person person = people.PersonList.RemoveAll(p => p.Id == id);
+
+    for (int i = 0; i < people.PersonList.Count; i++)
+    {
+        //Procura o id person dentro da lista people
+        Person person = people.PersonList[i];
+        if (person.Id == id)
+        {
+            //Quando encontrado - remove o id == i Quando encontrado
+            people.PersonList.RemoveAt(i);
+            //Returna o id apagado
+            return Results.Ok(id);
+        }
+    }
+    return Results.NotFound($"ID: {id} not found!");
+});
+
+//=> delegate [sempre que este for executado faz o que esta dentro.]
+//? == significa que devolve Null
+app.MapPut("/People", (int id, Person person) =>
+{
+    //Funciona igual a um for em que p é todas as iteraçoes e verifica se é igual ao id inserido
+    Person p = people.PersonList.Find(p => p.Id == id);
+
+    if (p != null) 
+    {
+        return Results.NotFound($"ID: {id} not found!");
+    }
+    else
+    {
+        p.FirstName = person.FirstName;
+        p.LastName = person.LastName;
+        p.Profession = person.Profession;
+        p.Gender = person.Gender;
+        p.Age = person.Age;
+        //p.Id = person.Id; ID mantem-se porque so queremos alterar os dados da pessoa
+        return Results.Ok(person);
+    }
+
+    /*for (int i = 0; i < people.PersonList.Count; i++)
+    {
+        //Procura o id person dentro da lista people
+        Person person = people.PersonList[i];
+        if (person.Id == id)
+        {
+            //Quando encontrado - editar o id == i
+            people.PersonList.Add(person);
+            //Returna o faz update
+            return Results.Ok(person);
+        }
+    }
+    return Results.NotFound($"ID: {id} not found!");*/
+});
+
+
 app.Run();
 
 People loadJsonData() //Instanciar, serializar,deserializar e returnar a instancia do metodo

@@ -4,6 +4,7 @@
       "FirstName": "Pedro",
       "LastName": "Lopes",
       "Profession": "Teacher",
+      "Gender":  "Male",
       "Age": 22,
       "Id": 1
     },
@@ -11,6 +12,7 @@
       "FirstName": "Ana",
       "LastName": "Matos",
       "Profession": "Driver",
+      "Gender": "Female",
       "Age": 28,
       "Id": 2
     },
@@ -18,6 +20,7 @@
       "FirstName": "Marco",
       "LastName": "Gouda",
       "Profession": "Student",
+      "Gender": "Male",
       "Age": 17,
       "Id": 3
     }
