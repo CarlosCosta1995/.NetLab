@@ -2,10 +2,11 @@
 {
     public class Employees
     {
-        public List<Employee> EmployeeList { get; set; }
+        //Atenção EmployeesList(aqui)  tem de ser igual ao do Ficheiro Json (Generico/Geral)
+        public List<Employee> EmployeesList { get; set; }
         public Employees()
         {
-            EmployeeList = new List<Employee>();
+            EmployeesList = new List<Employee>();
         }
     }
 }
