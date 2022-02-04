@@ -91,9 +91,9 @@ app.MapDelete("/Employees/{id}", (int id) =>
 });
 
 
-app.MapPut("/Employees", (int id, Employees empPut) =>
+app.MapPut("/Employees", (int id, Employee empPut) =>
 {
-    Employees employee = empPut.EmployeesList.Find(p => p.UserId == id);
+    Employee employee = emps.EmployeesList.Find(p => p.UserId == id);
     
     
     if (removed == null)
