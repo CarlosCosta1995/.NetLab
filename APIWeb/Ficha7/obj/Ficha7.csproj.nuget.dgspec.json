@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Net15\\Desktop\\Requalificar\\APIWeb\\Ficha7\\Ficha7.csproj": {}
+    "C:\\Users\\Net15\\Desktop\\.Net\\APIWeb\\Ficha7\\Ficha7.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Net15\\Desktop\\Requalificar\\APIWeb\\Ficha7\\Ficha7.csproj": {
+    "C:\\Users\\Net15\\Desktop\\.Net\\APIWeb\\Ficha7\\Ficha7.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Net15\\Desktop\\Requalificar\\APIWeb\\Ficha7\\Ficha7.csproj",
+        "projectUniqueName": "C:\\Users\\Net15\\Desktop\\.Net\\APIWeb\\Ficha7\\Ficha7.csproj",
         "projectName": "Ficha7",
-        "projectPath": "C:\\Users\\Net15\\Desktop\\Requalificar\\APIWeb\\Ficha7\\Ficha7.csproj",
+        "projectPath": "C:\\Users\\Net15\\Desktop\\.Net\\APIWeb\\Ficha7\\Ficha7.csproj",
         "packagesPath": "C:\\Users\\Net15\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Net15\\Desktop\\Requalificar\\APIWeb\\Ficha7\\obj\\",
+        "outputPath": "C:\\Users\\Net15\\Desktop\\.Net\\APIWeb\\Ficha7\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Net15\\AppData\\Roaming\\NuGet\\NuGet.Config",

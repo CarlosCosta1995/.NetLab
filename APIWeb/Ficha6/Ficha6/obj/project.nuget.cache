@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "RDppp960N/u0M4zUI1KC1vZJ/I8kGHrrqNAybgb/jpDpxePB1n7kJs+ViYcL2341KTTkyofZPGC1wU9SG+vn5g==",
+  "dgSpecHash": "iCN7BXgWBzBR+/lctUmd0xT4y6zmiFHX2fpZuTes+/6Wuhsw2ViyHcq61crkwZvUmDevAaQU6CTmv7nC/f8LGA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Net15\\Desktop\\Requalificar\\.NetLab\\APIWeb\\Ficha6\\Ficha6\\Ficha6.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Net15\\Desktop\\.Net\\APIWeb\\Ficha6\\Ficha6\\Ficha6.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Net15\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Net15\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Net15\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Net15\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
   "logs": []
 }

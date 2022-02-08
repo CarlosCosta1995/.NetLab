@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Net15\\Desktop\\Requalificar\\.NetLab\\APIWeb\\Ficha6\\Ficha6\\Ficha6.csproj": {}
+    "C:\\Users\\Net15\\Desktop\\.Net\\APIWeb\\Ficha6\\Ficha6\\Ficha6.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Net15\\Desktop\\Requalificar\\.NetLab\\APIWeb\\Ficha6\\Ficha6\\Ficha6.csproj": {
+    "C:\\Users\\Net15\\Desktop\\.Net\\APIWeb\\Ficha6\\Ficha6\\Ficha6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Net15\\Desktop\\Requalificar\\.NetLab\\APIWeb\\Ficha6\\Ficha6\\Ficha6.csproj",
+        "projectUniqueName": "C:\\Users\\Net15\\Desktop\\.Net\\APIWeb\\Ficha6\\Ficha6\\Ficha6.csproj",
         "projectName": "Ficha6",
-        "projectPath": "C:\\Users\\Net15\\Desktop\\Requalificar\\.NetLab\\APIWeb\\Ficha6\\Ficha6\\Ficha6.csproj",
+        "projectPath": "C:\\Users\\Net15\\Desktop\\.Net\\APIWeb\\Ficha6\\Ficha6\\Ficha6.csproj",
         "packagesPath": "C:\\Users\\Net15\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Net15\\Desktop\\Requalificar\\.NetLab\\APIWeb\\Ficha6\\Ficha6\\obj\\",
+        "outputPath": "C:\\Users\\Net15\\Desktop\\.Net\\APIWeb\\Ficha6\\Ficha6\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Net15\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,20 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

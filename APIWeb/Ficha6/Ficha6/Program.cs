@@ -3,13 +3,24 @@ using System.Text.Json;
 
 People people = loadJsonData(); //invocar o methodo
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+//add o swagger
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
+
 // Configure the HTTP request pipeline.
+
+//add ifs do swagger
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 app.UseHttpsRedirection();
 
