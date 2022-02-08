@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre\\Documents\\GitHub\\.NetLab\\APIWeb\\Ficha7\\Ficha7.csproj": {}
+    "C:\\Users\\andre\\Documents\\GitHub\\.NetLab\\Homework\\Supermarket\\CustomersTry\\CustomersTry.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre\\Documents\\GitHub\\.NetLab\\APIWeb\\Ficha7\\Ficha7.csproj": {
+    "C:\\Users\\andre\\Documents\\GitHub\\.NetLab\\Homework\\Supermarket\\CustomersTry\\CustomersTry.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\Documents\\GitHub\\.NetLab\\APIWeb\\Ficha7\\Ficha7.csproj",
-        "projectName": "Ficha7",
-        "projectPath": "C:\\Users\\andre\\Documents\\GitHub\\.NetLab\\APIWeb\\Ficha7\\Ficha7.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\Documents\\GitHub\\.NetLab\\Homework\\Supermarket\\CustomersTry\\CustomersTry.csproj",
+        "projectName": "CustomersTry",
+        "projectPath": "C:\\Users\\andre\\Documents\\GitHub\\.NetLab\\Homework\\Supermarket\\CustomersTry\\CustomersTry.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\Documents\\GitHub\\.NetLab\\APIWeb\\Ficha7\\obj\\",
+        "outputPath": "C:\\Users\\andre\\Documents\\GitHub\\.NetLab\\Homework\\Supermarket\\CustomersTry\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
