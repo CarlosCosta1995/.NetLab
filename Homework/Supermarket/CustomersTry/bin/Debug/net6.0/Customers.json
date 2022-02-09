@@ -1,7 +1,7 @@
-﻿{
+{
   "CustomersList": [
     {
-      "CustomerNumber": 1,
+      "CustomerNumber": 0,
       "FirstName": "Carine",
       "LastName": "Schmitt",
       "City": "Nantes",
@@ -10,7 +10,7 @@
       "Address": "54, rue Royale"
     },
     {
-      "CustomerNumber": 2,
+      "CustomerNumber": 1,
       "FirstName": "Jean",
       "LastName": "King",
       "City": "Las Vegas",
@@ -19,7 +19,7 @@
       "Address": "8489 Strong St."
     },
     {
-      "CustomerNumber": 3,
+      "CustomerNumber": 2,
       "FirstName": "Peter",
       "LastName": "Ferguson",
       "City": "Melbourne",
