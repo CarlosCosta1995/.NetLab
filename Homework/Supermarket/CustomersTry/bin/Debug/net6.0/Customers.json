@@ -1,0 +1,31 @@
+﻿{
+  "CustomersList": [
+    {
+      "CustomerNumber": 1,
+      "FirstName": "Carine",
+      "LastName": "Schmitt",
+      "City": "Nantes",
+      "Region": "NV",
+      "Email": "Schmitt.Carine@google.com",
+      "Address": "54, rue Royale"
+    },
+    {
+      "CustomerNumber": 2,
+      "FirstName": "Jean",
+      "LastName": "King",
+      "City": "Las Vegas",
+      "Region": "NV",
+      "Email": "King231@microsoft.com",
+      "Address": "8489 Strong St."
+    },
+    {
+      "CustomerNumber": 3,
+      "FirstName": "Peter",
+      "LastName": "Ferguson",
+      "City": "Melbourne",
+      "Region": "Victoria",
+      "Email": "ferguson_peter@outlook.com",
+      "Address": "636 St Kilda Road"
+    }
+  ]
+}
