@@ -129,6 +129,21 @@ app.MapGet("/employees/{region}", (string region) =>
     }
 });
 
+/*
+app.MapGet("/employees/region/{region}", (string region) =>
+{
+    //var employees = emps.EmployeesList.FindAll(e => e.Region == region);
+    List<Employee> employees = emps.EmployeesList.FindAll(e => e.Region == region);
+    if (employees.Count == 0)
+    {
+        return Results.NotFound("region not found");
+    }
+    else
+    {
+        return Results.Ok(employees);
+    }
+});*/
+
 //Download method
 // deveriamos serializar os ficheiros e devolver em download o ficheiro actualizado
 app.MapGet("/employees/download", () =>

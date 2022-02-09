@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "un7HeLWY4bvO8ViWXzBz9rT41UAgnciRlOW/xkm3Zl1ZtrG2b0Vjixz4BjmfhZsZ1El+tOgrSfHcZuATIYM+7A==",
+  "dgSpecHash": "dkPHkTBhhb6s5p0iP33vxVMnELswWPgyXf3c0d2v6zP9R2VQrQ5OIJu82wziA+vlv5FAWKzDYC8jXrmCALOB/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Net15\\Desktop\\.Net\\APIWeb\\Ficha7\\Ficha7.csproj",
+  "projectFilePath": "C:\\Users\\Net15\\Desktop\\Requalificar\\.Net\\APIWeb\\Ficha7\\Ficha7.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Net15\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Net15\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
