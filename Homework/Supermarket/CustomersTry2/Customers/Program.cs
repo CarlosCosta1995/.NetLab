@@ -23,7 +23,7 @@ if (app.Environment.IsDevelopment())
 //instanciar LoadJsonText() para as duas classes
 Customer customerJson = LoadCostumerJsonText();
 Customers customersJson = LoadCustomersJsonText();
-Customers Customers = new Customers();
+
 
 //Ciar os metodos LoadJesonText, deserialize e returnar os repectivos objs
 Customer LoadCostumerJsonText() 
@@ -139,7 +139,7 @@ app.MapDelete("/customers", (int id) =>
 //===== Erro o Download nao gera os customers da lista =====
 app.MapGet("/customers/download", () => 
 {
-    string str = JsonSerializer.Serialize<Customers>(Customers);
+    string str = JsonSerializer.Serialize<Customers>(customersJson);
     File.WriteAllText("customersList.json", str);
 
     byte[] bytes = File.ReadAllBytes("customersList.json");

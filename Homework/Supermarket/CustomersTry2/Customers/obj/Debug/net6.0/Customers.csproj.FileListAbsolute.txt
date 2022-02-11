@@ -27,3 +27,4 @@ C:\Users\andre\Documents\GitHub\.NetLab\Homework\Supermarket\CustomersTry2\Custo
 C:\Users\andre\Documents\GitHub\.NetLab\Homework\Supermarket\CustomersTry2\Customers\obj\Debug\net6.0\ref\Customers.dll
 C:\Users\andre\Documents\GitHub\.NetLab\Homework\Supermarket\CustomersTry2\Customers\obj\Debug\net6.0\Customers.pdb
 C:\Users\andre\Documents\GitHub\.NetLab\Homework\Supermarket\CustomersTry2\Customers\obj\Debug\net6.0\Customers.genruntimeconfig.cache
+C:\Users\andre\Documents\GitHub\.NetLab\Homework\Supermarket\CustomersTry2\Customers\bin\Debug\net6.0\customersList.json
