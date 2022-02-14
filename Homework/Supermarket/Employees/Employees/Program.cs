@@ -52,9 +52,9 @@ app.MapGet("/employees", () =>
     }
 });
 
-/*Adicionar um novo funcionário, 
- * o ID deve ser gerado automaticamente tendo em conta o número de funcionários existentes. 
- * O ID do novo funcionário deve ser devolvido na resposta */
+/*Adicionar um novo funcionÃ¡rio, 
+ * o ID deve ser gerado automaticamente tendo em conta o nÃºmero de funcionÃ¡rios existentes. 
+ * O ID do novo funcionÃ¡rio deve ser devolvido na resposta */
 app.MapPost("/employees", (Employee newEmployee) =>
 {
     if (emps.EmployeesList.Count == 0)
@@ -71,7 +71,7 @@ app.MapPost("/employees", (Employee newEmployee) =>
     return Results.Created("/employees", newEmployee);
 });
 
-/*Apagar um funcionário pelo seu ID. O ID do funcionário removido deve ser devolvido na resposta*/
+/*Apagar um funcionÃ¡rio pelo seu ID. O ID do funcionÃ¡rio removido deve ser devolvido na resposta*/
 app.MapDelete("/employees/{id:int}", (int id) => 
 { 
     int removed = emps.EmployeesList.RemoveAll(users => users.UserId == id);
@@ -85,7 +85,7 @@ app.MapDelete("/employees/{id:int}", (int id) =>
     }
 });
 
-//Selecionar apenas um funcionário pelo seu ID e devolver esse mesmo funcionário na resposta
+//Selecionar apenas um funcionÃ¡rio pelo seu ID e devolver esse mesmo funcionÃ¡rio na resposta
 app.MapGet("/employees/employee/{id:int}", (int id) =>
 {
     Employee employee = emps.EmployeesList.Find(e => e.UserId == id);
@@ -99,8 +99,8 @@ app.MapGet("/employees/employee/{id:int}", (int id) =>
     }
 });
 
-//Alterar os detalhes de um determinado funcionário
-//pelo seu ID e devolver essa mesma funcionário atualizada na resposta
+//Alterar os detalhes de um determinado funcionÃ¡rio
+//pelo seu ID e devolver essa mesma funcionÃ¡rio atualizada na resposta
 app.MapPut("/employees/{id:int}", (int id, Employee changeEmployee) => 
 { 
    Employee p = emps.EmployeesList.Find(user => user.UserId == id);
@@ -121,7 +121,7 @@ app.MapPut("/employees/{id:int}", (int id, Employee changeEmployee) =>
     }
 });
 
-//Listar todos os funcionários por região
+//Listar todos os funcionÃ¡rios por regiÃ£o
 app.MapGet("/employees/region/{region}", (string region) => 
 { 
     List<Employee> ps = emps.EmployeesList.FindAll(user => user.Region == region);
@@ -136,14 +136,21 @@ app.MapGet("/employees/region/{region}", (string region) =>
 
 });
 
-//Efetuar download da lista atual de funcionários como um ficheiro .json
+//Efetuar download da lista atual de funcionÃ¡rios como um ficheiro .json
 app.MapGet("/employees/download", () =>
 {
     string listEmps = JsonSerializer.Serialize<Employees>(emps);
     File.WriteAllText("EmployeesList.json", listEmps);
-
-    byte[] bytes = File.ReadAllBytes("EmployeesList.json");
-    return Results.File(bytes, null, "EmployeesList.json");
+    
+   try
+    {
+         byte[] bytes = File.ReadAllBytes("EmployeesList.json");
+        return Results.File(bytes, null, "EmployeesList.json");
+    }
+    catch (FileNotFoundException e)
+    {
+        return Results.NotFound(e.Message);
+    } 
 });
 
 app.Run();
