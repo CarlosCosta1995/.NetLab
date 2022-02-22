@@ -31,6 +31,11 @@ app.MapGet("/" , () =>
     return Results.Ok("DEFAULT");
 });
 
+app.MapDelete("/", () =>
+{
+    return Results.Ok("Delete Endpoint");
+});
+
 // ============= MiddleWares ==========
 //A ORDEM DOS MIDDLEWARES INFLUENCIA
 app.Use(async (context, next) =>
@@ -47,7 +52,11 @@ app.Use(async (context, next) =>
     Debug.WriteLine("AFTER SECOND MIDDLEWARE");
 });
 
-//============= Custom MiddleWare ==============
+//Context == Informação entre o Request e Responde
+//Next == Entre middlewares (de um para outro next)
+//Task == Funçoes do invoke do next e tarefa(s) a serem realizadas
+
+//============= Custom Logger MiddleWare ==============
 app.UseCustomMiddleware();
 app.UseLoggerMiddleware();
 
