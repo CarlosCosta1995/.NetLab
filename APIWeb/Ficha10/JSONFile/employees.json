@@ -1,7 +1,7 @@
 {
   "EmployeesList": [
     {
-      "UserId": "krish",
+      "UserId": 1,
       "JobTitle": "Developer",
       "FirstName": "Krish",
       "LastName": "Lee",
@@ -11,7 +11,7 @@
       "EmailAddress": "krish.lee@learningcontainer.com"
     },
     {
-      "UserId": "devid",
+      "UserId": 2,
       "JobTitle": "Developer",
       "FirstName": "Devid",
       "LastName": "Rome",
@@ -21,7 +21,7 @@
       "EmailAddress": "devid.rome@learningcontainer.com"
     },
     {
-      "UserId": "tin",
+      "UserId": 3,
       "JobTitle": "Program Directory",
       "FirstName": "tin",
       "LastName": "jonson",

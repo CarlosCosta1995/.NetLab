@@ -13,14 +13,14 @@ namespace Ficha10.Models
 
         public static Employees LoadEmployeesJSON()
         {
-            string employeesJsonFile = File.ReadAllText("Employees.json");
+            string employeesJsonFile = File.ReadAllText("./JSONFile/Employees.json");
             Employees employees = JsonSerializer.Deserialize<Employees>(employeesJsonFile);
             return employees;
         }
 
         public static Characters LoadCharactersJSON()
         {
-            string charactersJsonFile = File.ReadAllText("Employees.json");
+            string charactersJsonFile = File.ReadAllText("./JSONFile/Employees.json");
             Characters characters = JsonSerializer.Deserialize<Characters>(charactersJsonFile);
             return characters;
         }
