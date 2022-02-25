@@ -18,7 +18,7 @@ namespace Ficha10.Controllers
         {
             //Como metodo é estatico e nao precisa de manipular nada, acessado atraves da Class
             //Caso contrario tem de ser instanciado e nao pode ser estatico, acessado atraves do Objecto de instancia
-            if(this.emps == null)
+            if (this.emps == null)
                 this.emps = Models.JsonLoader.LoadEmployeesJSON();
         }
 
@@ -59,7 +59,7 @@ namespace Ficha10.Controllers
         {
             //? == Nullable (Se nao encontrar, sera null)
             Models.Employee? employee = emps.EmployeesList.Find(user => user.UserId == id);
-            
+
             if (emps == null)
             {
                 return NotFound($"ID: {id} not found!");
@@ -159,7 +159,7 @@ namespace Ficha10.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetByRegion(string region)
         {
-           Employee? employees = emps.EmployeesList.Find(e => e.Region == region);
+            Employee? employees = emps.EmployeesList.Find(e => e.Region == region);
             if (employees == null)
             {
                 return NotFound($"{region} not found.");
