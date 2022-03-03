@@ -6,7 +6,7 @@ using System.Text.Json;
 
 namespace Ficha10.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]")]//Controller é sempre substituido pelo nome do controller (EmployeesController)
     [ApiController]
     public class EmployeesController : ControllerBase
     {
@@ -17,8 +17,7 @@ namespace Ficha10.Controllers
         public EmployeesController()
         {
             //Como metodo é estatico e nao precisa de manipular nada, acessado atraves da Class
-            //Caso contrario tem de ser instanciado e nao pode ser estatico, acessado atraves do Objecto de instancia
-            if (this.emps == null)
+            //Caso contrario tem de ser instanciado e nao pode ser estatico, acessado -atraves do Objecto de instancia
                 this.emps = Models.JsonLoader.LoadEmployeesJSON();
         }
 
@@ -72,7 +71,7 @@ namespace Ficha10.Controllers
 
 
         /*-----------------------------
-         * POST
+         * POST (Need Dependency Injection)
          * ----------------------------*/
 
         // POST api/<ValuesController>

@@ -56,9 +56,9 @@ namespace Ficha10.Controllers
           * ----------------------------*/
 
         // POST api/<ValuesController>
-        [HttpPost("", Name = "Post")]
+        [HttpPost("", Name = "PostCharacters")]
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(Models.Character))]
-        public IActionResult Post(Character toon)
+        public IActionResult PostCharacters(Character toon)
         {
             if (chars.CharactersList.Count == 0)
             {
@@ -79,10 +79,10 @@ namespace Ficha10.Controllers
                 * ----------------------------*/
 
         // PUT api/<ValuesController>/5
-        [HttpPut("{id}", Name = "Put")]
+        [HttpPut("{id}", Name = "PutCharacters")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Models.Characters))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult Put(int id, Character charPut)
+        public IActionResult PutCharacters(int id, Character charPut)
         {
             Character? toon = chars.CharactersList.Find(toon => toon.Id == id);
 
@@ -108,10 +108,10 @@ namespace Ficha10.Controllers
          * ----------------------------*/
 
         // DELETE api/<ValuesController>/5
-        [HttpDelete("{id}", Name = "Delete")]
+        [HttpDelete("{id}", Name = "DeleteCharacters")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Models.Characters))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult Delete(int id)
+        public IActionResult DeleteCharacters(int id)
         {
             int removed = chars.CharactersList.RemoveAll(toon => toon.Id == id);
 
@@ -131,10 +131,10 @@ namespace Ficha10.Controllers
          * ----------------------------*/
 
         // GET api/<ValuesController>/5
-        [HttpGet("gender/{gender}", Name = "GetByGender")]
+        [HttpGet("gender/{gender}", Name = "GetByGenderCharacters")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Models.Characters))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult GetByRegion(string gender)
+        public IActionResult GetByGenderCharacters(string gender)
         {
             List<Character>? toon = chars.CharactersList.FindAll(toon => toon.Gender == gender);
             if (toon.Count == 0)
@@ -174,10 +174,10 @@ namespace Ficha10.Controllers
          * ----------------------------*/
 
         // GET api/<ValuesController>/5
-        [HttpGet("download", Name = "GetDownload")]
+        [HttpGet("download", Name = "GetDownloadCharacters")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Models.Characters))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult GetDownload()
+        public IActionResult GetDownloadCharacters()
         {
             string listChars = JsonSerializer.Serialize<Characters>(chars);
             //namespace.Class.Function
