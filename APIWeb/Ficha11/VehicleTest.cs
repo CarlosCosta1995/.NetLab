@@ -8,17 +8,19 @@ namespace Ficha11
 {
     public class VehicleTest
     {
-        private int _seat;
+        private Car _car;
+        private Motorcycle _motorcycle;
 
-        public int Seat
-        {
-            get { return _seat; }
-            set { _seat = value; }
-        }
+        public Car Car { get { return _car; } }
 
         public VehicleTest(Car car)
         {
-            this._seat = car._numberOfSeat;
+            this._car = car;
+        }
+
+        public VehicleTest(Motorcycle moto)
+        {
+            this._motorcycle = moto;
         }
     }
 }

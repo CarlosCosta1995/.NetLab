@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ficha11
 {
-    public class Motorcycle : Vehicle
+    public class Motorcycle : Vehicle, IVehicle
     {
         public enum Type
         {
@@ -16,7 +16,12 @@ namespace Ficha11
         }
         public Type _type;
         public int _velocity;
-
+        private bool _turnOnOff;
+        public bool TurnOnOff
+        {
+            get { return _turnOnOff; }
+            set { _turnOnOff = value; }
+        }
         public Motorcycle(Type type, int velocity, Travel travel, string color, double weight, string brand, string model, Engine engine) : base(travel, color, weight, brand, model, engine)
         {
            this._type = type;
@@ -25,11 +30,23 @@ namespace Ficha11
 
         public override void Start()
         {
-            throw new NotImplementedException();
+            if (_turnOnOff == false)
+            {
+                Console.WriteLine("The car has turned off.");
+            }
+            else
+            {
+                Console.WriteLine("The car has turned on.");
+            }
         }
         public override string ToString()
         {
             return String.Format($"Type: {_type}, Velocity: {_velocity}, {base.ToString()}");
+        }
+
+        public void Drive()
+        {
+            throw new NotImplementedException();
         }
     }
 }
