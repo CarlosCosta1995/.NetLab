@@ -11,14 +11,22 @@ namespace Ficha10.Controllers
     public class EmployeesController : ControllerBase
     {
         //criar uma instancia dos Employees
-        private readonly Models.Employees emps;
+        private readonly IEmployees emps;
 
-        //Atribuir o valor do objecto atraves do construtor
+        /*//Atribuir o valor do objecto atraves do construtor
         public EmployeesController()
         {
             //Como metodo é estatico e nao precisa de manipular nada, acessado atraves da Class
             //Caso contrario tem de ser instanciado e nao pode ser estatico, acessado -atraves do Objecto de instancia
                 this.emps = Models.JsonLoader.LoadEmployeesJSON();
+        }*/
+
+        /*-----------------------------
+         * Constructor
+         * ----------------------------*/
+        public EmployeesController (IEmployees employees)
+        {
+            this.emps = employees;
         }
 
         /*-----------------------------
@@ -27,7 +35,7 @@ namespace Ficha10.Controllers
 
         // GET: api/<ValuesController>
         [HttpGet]
-        public IEnumerable<Models.Employee> Get()
+        public IEnumerable<Employee> Get()
         {
             //IEnumerable generaliza para qualquer tipo de lista, array, linked list,...
             return emps.EmployeesList;
@@ -179,7 +187,7 @@ namespace Ficha10.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetDownload()
         {
-            string listEmps = JsonSerializer.Serialize<Employees>(emps);
+            string listEmps = JsonSerializer.Serialize<IEmployees>(emps);
             //namespace.Class.Function
             System.IO.File.WriteAllText("./EmployeesList.json", listEmps);
 

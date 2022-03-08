@@ -8,19 +8,21 @@ namespace Ficha11
 {
     public class VehicleTest
     {
-        private Car _car;
-        private Motorcycle _motorcycle;
+       /* private Car _car;
+        private Motorcycle _motorcycle;*/
+       private Vehicle _Vehicle;
 
-        public Car Car { get { return _car; } }
+        //prop tab = create properties
+        public Vehicle Vehicle { get { return _Vehicle; } }
 
-        public VehicleTest(Car car)
+        public VehicleTest(Vehicle vehicle)
         {
-            this._car = car;
+            this._Vehicle = vehicle;
         }
-
+        /*
         public VehicleTest(Motorcycle moto)
         {
             this._motorcycle = moto;
-        }
+        }*/
     }
 }

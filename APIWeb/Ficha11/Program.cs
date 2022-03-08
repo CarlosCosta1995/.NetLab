@@ -24,6 +24,3 @@ Console.WriteLine(test.Car);
 test.Car.TurnOnOff = true;
 test.Car.Start();
 
-Motorcycle b = test.SwapVehicle<Motorcycle>();
-VehicleTest testB = new VehicleTest(b);
-Console.WriteLine(testB.ToString());

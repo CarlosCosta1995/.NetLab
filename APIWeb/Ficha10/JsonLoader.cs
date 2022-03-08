@@ -11,11 +11,11 @@ namespace Ficha10.Models
               return employee;
           }*/
 
-        public static Employees LoadEmployeesJSON()
+        public static List<Employee> LoadEmployeesJSON()
         {
+            //cria uma lsita de Employees atavés do Array de Employee do Json
             string employeesJsonFile = File.ReadAllText("./JSONFile/Employees.json");
-            Employees employees = JsonSerializer.Deserialize<Employees>(employeesJsonFile);
-            return employees;
+            return JsonSerializer.Deserialize<List<Employee>>(employeesJsonFile);
         }
 
         public static Characters LoadCharactersJSON()

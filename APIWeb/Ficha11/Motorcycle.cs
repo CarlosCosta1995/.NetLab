@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ficha11
 {
-    public class Motorcycle : Vehicle, IVehicle
+    public class Motorcycle : Vehicle
     {
         public enum Type
         {
@@ -14,8 +14,8 @@ namespace Ficha11
             CRUISER,
             ADVENTURE
         }
-        public Type _type;
-        public int _velocity;
+        private Type _type;
+        private int _velocity;
         private bool _turnOnOff;
         public bool TurnOnOff
         {
@@ -43,10 +43,9 @@ namespace Ficha11
         {
             return String.Format($"Type: {_type}, Velocity: {_velocity}, {base.ToString()}");
         }
-
-        public void Drive()
+        public override void Drive()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("you are going to fast!");
         }
     }
 }

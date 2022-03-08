@@ -8,23 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\andre\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Net15\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\Documents\\GitHub\\.NetLab\\APIWeb\\Ficha11\\Ficha11.csproj",
+      "projectUniqueName": "C:\\Users\\Net15\\Desktop\\Requalificar\\.Net\\APIWeb\\Ficha11\\Ficha11.csproj",
       "projectName": "Ficha11",
-      "projectPath": "C:\\Users\\andre\\Documents\\GitHub\\.NetLab\\APIWeb\\Ficha11\\Ficha11.csproj",
-      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\Documents\\GitHub\\.NetLab\\APIWeb\\Ficha11\\obj\\",
+      "projectPath": "C:\\Users\\Net15\\Desktop\\Requalificar\\.Net\\APIWeb\\Ficha11\\Ficha11.csproj",
+      "packagesPath": "C:\\Users\\Net15\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Net15\\Desktop\\Requalificar\\.Net\\APIWeb\\Ficha11\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Net15\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

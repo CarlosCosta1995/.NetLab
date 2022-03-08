@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ficha11
 {
-    public abstract class Vehicle
+    public abstract class Vehicle : IVehicle
     {
         public enum Travel //enumerables, pode usar um switch, sao usados para menos
         {
@@ -15,12 +15,12 @@ namespace Ficha11
             AIR
         }
 
-        public Travel _travel;
-        public string _color;
-        public double _weight;
-        public string _brand;
-        public string _model;
-        public Engine _engine;
+        protected Travel _travel;
+        protected string _color;
+        protected double _weight;
+        protected string _brand;
+        protected string _model;
+        protected Engine _engine;
 
         public Vehicle(Travel travel, string color, double weight, string brand, string model, Engine engine)
         {
@@ -36,7 +36,13 @@ namespace Ficha11
 
         public override string ToString()
         {
-            return String.Format($"Treavel: {_travel.ToString()}, Color: {_color}, Weight: {_weight}, Brand: {_brand}, Model: {_model} and Engine: {_engine.ToString()}");
+            return String.Format($"Travel: {_travel.ToString()}, Color: {_color}, Weight: {_weight}, Brand: {_brand}, Model: {_model} and Engine: {_engine.ToString()}");
+        }
+
+        //virutal = caso enhas que fazer overide depois em clases herdadas do Vehicle
+        public virtual void Drive()
+        {
+            Console.WriteLine("You are driving to fast!");
         }
     }
 }

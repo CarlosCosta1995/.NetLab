@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ficha11
 {
-    public class Car : Vehicle, IVehicle
+    public class Car : Vehicle
     {
-        public int _numberOfDoor;
-        public int _numberOfSeat;
+        private int _numberOfDoor;
+        private int _numberOfSeat;
         private bool _turnOnOff;
         public bool TurnOnOff
         {
@@ -38,12 +38,8 @@ namespace Ficha11
 
         public override string ToString()
         {
+            //Call Stack
             return String.Format($"Number of Seats: {_numberOfSeat}, Number of Doors: {_numberOfDoor} and {base.ToString()}");
-        }
-
-        public void Drive()
-        {
-            throw new NotImplementedException();
         }
     }
 }
