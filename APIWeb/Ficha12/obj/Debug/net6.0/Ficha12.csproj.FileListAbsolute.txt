@@ -1,0 +1,7 @@
+C:\Users\Net15\Desktop\Requalificar\.Net\APIWeb\Ficha12\obj\Debug\net6.0\Ficha12.csproj.AssemblyReference.cache
+C:\Users\Net15\Desktop\Requalificar\.Net\APIWeb\Ficha12\obj\Debug\net6.0\Ficha12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Net15\Desktop\Requalificar\.Net\APIWeb\Ficha12\obj\Debug\net6.0\Ficha12.AssemblyInfoInputs.cache
+C:\Users\Net15\Desktop\Requalificar\.Net\APIWeb\Ficha12\obj\Debug\net6.0\Ficha12.AssemblyInfo.cs
+C:\Users\Net15\Desktop\Requalificar\.Net\APIWeb\Ficha12\obj\Debug\net6.0\Ficha12.csproj.CoreCompileInputs.cache
+C:\Users\Net15\Desktop\Requalificar\.Net\APIWeb\Ficha12\obj\Debug\net6.0\Ficha12.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Net15\Desktop\Requalificar\.Net\APIWeb\Ficha12\obj\Debug\net6.0\Ficha12.MvcApplicationPartsAssemblyInfo.cache
