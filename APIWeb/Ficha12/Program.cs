@@ -12,8 +12,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //Applying The Dependency Injection
-builder.Services.AddDbContext<LibraryContext>();
-builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddDbContext<LibraryContext>(); //referencia do context com a base dados
+builder.Services.AddScoped<IBookService, BookService>();//cada ver que o context é invocado verifica se existe ou acrescenta na DB
 
 var app = builder.Build();
 
@@ -28,7 +28,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
-//Invoking  CreateDbIfNotExists
+//Invoking  CreateDbIfNotExists criar base dados e inserir dados
 app.CreateDbIfNotExists();
 
 app.Run();

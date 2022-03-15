@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace Ficha12.Service
 {
-    public interface IBookService
+    public interface IBookService //Servico é quem vai ter sempre as operaçoes CRUD (create, read, update e delete)
     {
-        //Criating Endpoints not highly bounded.
+        //Creating Endpoints not highly bounded.
         public abstract IEnumerable<Book> GetAllBooks(); //GetAll
-        public abstract Book GetByISBN(string isbn); //Get by ISBN
+        public abstract Book? GetByISBN(string isbn); //Get by ISBN
         public abstract Book Create(Book newBook); //Create
         public abstract void GetByAuthor(string author); //Get by Authors
         public abstract void Update(string isbn, Book book); //Update Book

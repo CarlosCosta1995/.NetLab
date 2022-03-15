@@ -22,8 +22,8 @@ namespace Ficha12.Data
                 Language = "English",
                 Pages = "1216",
                 Publisher = publisher
-
             });
+            context.SaveChanges(); 
         }
     }
 }

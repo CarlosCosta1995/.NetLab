@@ -17,7 +17,7 @@ namespace Ficha12
         //Overrride the OnConfiguring Method
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
         {
-            optionsBuilder.UseMySQL("server=localhost;database=library;" + "user:root; password=password");
+            optionsBuilder.UseMySQL("server=localhost;database=library;" + "user=root; password=password");
         }
 
         //Overrride the OnConfiguring Method
