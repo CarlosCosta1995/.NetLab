@@ -80,5 +80,47 @@ namespace Ficha12WebApp.Controllers
                 return RedirectToAction(nameof(Error));
             }            
         }
+
+        /// <summary>
+        /// Criar uma Iction para ir a view do Edit
+        /// Criar uma Iaction task para fazer Post do item na base dados
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult Edit() //Retorna a view apenas
+        {
+            return View();
+        }
+
+        /*crtl+k ctrl+c // ctrl+k crtl+u*/
+        [HttpPost]
+        public async Task<IActionResult> Edit(Book book)
+        {
+            if (ModelState.IsValid)
+            {
+                var newBook = service.Update(book.ISBN, book);
+                if (newBook is not null)
+                    return RedirectToAction(nameof(Index)); //redirect para a view index
+                else
+                    return RedirectToAction(nameof(Error)); //redirect para a view de erro
+            }
+            else
+            {
+                return RedirectToAction(nameof(Error));
+            }
+        }
+
+        [HttpDelete]
+        public IActionResult Delete(string isbn)
+        {
+            if (ModelState.IsValid)
+            {
+                service.DeleteByISBN(isbn);
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return RedirectToAction(nameof(Error));
+            }
+        }
     }
 }
