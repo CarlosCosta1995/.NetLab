@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model Ficha14.Models.UserViewModel;
+
+@{
+    ViewData["Title"] = "User Details";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to @Model.UserName</h1>
+
+    <h2>User Details</h2>
+    <address>
+        <br> ID: @Model.ID </br>
+        <br> ID: @Model.UserName </br>
+        <br> ID: @Model.Email </br>
+        <br> ID: @Model.Role </br>
+        <br> Token: @ViewData["Token"] </br>
+    </address>
+</div>
