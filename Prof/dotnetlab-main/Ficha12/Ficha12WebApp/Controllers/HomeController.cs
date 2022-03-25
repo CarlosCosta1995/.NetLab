@@ -86,9 +86,18 @@ namespace Ficha12WebApp.Controllers
         /// Criar uma Iaction task para fazer Post do item na base dados
         /// </summary>
         /// <returns></returns>
-        public IActionResult Edit() //Retorna a view apenas
+        public IActionResult Edit(string isbn) //Retorna a view apenas
         {
-            return View();
+            var book = service.GetByISBN(isbn);
+            if(book is not null)
+            {
+                return View(book);
+            }
+            else
+            {
+                return RedirectToAction(nameof(Error));
+            }
+            
         }
 
         /*crtl+k ctrl+c // ctrl+k crtl+u*/
@@ -109,8 +118,26 @@ namespace Ficha12WebApp.Controllers
             }
         }
 
-        [HttpDelete]
-        public IActionResult Delete(string isbn)
+        /// <summary>
+        /// Delete a Book
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult Apagar(string isbn) //Retorna a view apenas
+        {
+            var book = service.GetByISBN(isbn);
+            if (book is not null)
+            {
+                return View(book);
+            }
+            else
+            {
+                return RedirectToAction(nameof(Error));
+            }
+
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(string isbn)
         {
             if (ModelState.IsValid)
             {
