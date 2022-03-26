@@ -1,0 +1,7 @@
+C:\Users\andre\Documents\GitHub\.NetLab\Homework\MVC\Ficha122\Ficha122\obj\Debug\net6.0\Ficha122.csproj.AssemblyReference.cache
+C:\Users\andre\Documents\GitHub\.NetLab\Homework\MVC\Ficha122\Ficha122\obj\Debug\net6.0\Ficha122.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\Documents\GitHub\.NetLab\Homework\MVC\Ficha122\Ficha122\obj\Debug\net6.0\Ficha122.AssemblyInfoInputs.cache
+C:\Users\andre\Documents\GitHub\.NetLab\Homework\MVC\Ficha122\Ficha122\obj\Debug\net6.0\Ficha122.AssemblyInfo.cs
+C:\Users\andre\Documents\GitHub\.NetLab\Homework\MVC\Ficha122\Ficha122\obj\Debug\net6.0\Ficha122.csproj.CoreCompileInputs.cache
+C:\Users\andre\Documents\GitHub\.NetLab\Homework\MVC\Ficha122\Ficha122\obj\Debug\net6.0\Ficha122.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\andre\Documents\GitHub\.NetLab\Homework\MVC\Ficha122\Ficha122\obj\Debug\net6.0\Ficha122.MvcApplicationPartsAssemblyInfo.cache
