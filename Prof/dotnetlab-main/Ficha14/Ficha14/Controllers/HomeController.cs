@@ -88,7 +88,7 @@ namespace Ficha14.Controllers
             }
 
             var user = userService.Get(userModel.UserName, userModel.Password);
-            n m,      var validUser = new UserViewModel { UserName = user.UserName, ID = user.ID, Role = user.Role, Email = user.Email, Path = user.Path};
+            var validUser = new UserViewModel { UserName = user.UserName, ID = user.ID, Role = user.Role, Email = user.Email, Path = user.Path};
 
             if (validUser != null)
             {
