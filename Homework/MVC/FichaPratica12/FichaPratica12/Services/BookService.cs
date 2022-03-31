@@ -82,6 +82,7 @@ namespace FichaPratica12.Services
 
             //var booksWithAuthor = context.Books.Include(a => a.Author == author);
             var booksWithAuthor = context.Books
+                .Include(p => p.Publisher)
                 .AsEnumerable()
                 .Where(p => p.Author == author);
             if (booksWithAuthor is null)
