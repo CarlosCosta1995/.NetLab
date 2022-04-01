@@ -1607,23 +1607,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\andre\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Net15\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\Documents\\GitHub\\.NetLab\\Homework\\MVC\\FichaPratica12\\FichaPratica12\\FichaPratica12.csproj",
+      "projectUniqueName": "C:\\Users\\Net15\\Desktop\\Requalificar\\.Net\\slides\\FichaPratica12\\FichaPratica12\\FichaPratica12.csproj",
       "projectName": "FichaPratica12",
-      "projectPath": "C:\\Users\\andre\\Documents\\GitHub\\.NetLab\\Homework\\MVC\\FichaPratica12\\FichaPratica12\\FichaPratica12.csproj",
-      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\Documents\\GitHub\\.NetLab\\Homework\\MVC\\FichaPratica12\\FichaPratica12\\obj\\",
+      "projectPath": "C:\\Users\\Net15\\Desktop\\Requalificar\\.Net\\slides\\FichaPratica12\\FichaPratica12\\FichaPratica12.csproj",
+      "packagesPath": "C:\\Users\\Net15\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Net15\\Desktop\\Requalificar\\.Net\\slides\\FichaPratica12\\FichaPratica12\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Net15\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
